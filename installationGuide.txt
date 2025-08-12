@@ -1,0 +1,11 @@
+If you want to get Elixir for your windows machine, simply use Chocolatey. Open your command prompt and run the following command:
+
+```bash
+choco install elixir
+```
+
+This will install Elixir along with all its dependencies. Make sure you have Chocolatey installed on your system before running this command.
+
+You gotta add the path to your Elixir installation to your system's PATH environment variable. This will allow you to run Elixir commands from any command prompt window.
+
+Go to your System Properties > Advanced > Environment Variables, and find the PATH variable in the System variables section. Click Edit and add the path to your Elixir installation (usually `C:\ProgramData\chocolatey\lib\elixir\tools\bin`) to the list of paths.
