@@ -40,3 +40,34 @@ IO.puts(is_integer(43294.533)) # false
 
 # Elixir also provides three boolean operators: or, and, and not. These operators are strict in the sense that they expect something that evaluates to a boolean (true or false) as their first argument
 IO.puts(false or is_boolean(true)) # true and NOTE: idhr phla argument true ya false hi dena otherwise error aayega like this: ** (BadBooleanError) expected a boolean on left-side of "and"
+
+
+# or and and are short-circuit operators. They only execute the right side if the left side is not enough to determine the result means if phle hi false hai in "and" then does not matter aage kya hai
+# false and raise("This error will never be raised") it gives =  false
+# true or raise("This error will never be raised")it gives = true
+
+
+# Elixir also provides the concept of nil, to indicate the absence of a value, and a set of logical operators that also manipulate nil: ||/2, &&/2, and !/1. For these operators, false and nil are considered "falsy", all other values are considered "truthy":
+
+# or
+# 1 || true = 1
+# false || 11 = 11
+
+#and
+# nil && 13 = nil
+# true && 17 = 17
+
+# not
+# !true = false
+# !1 = false
+# !nil = true
+
+# Similarly, values like 0 and "", which some other programming languages consider to be "falsy", are also "truthy" in Elixir.
+
+# As a rule of thumb, use and, or and not when you are expecting booleans. If any of the arguments are non-boolean, use &&, || and !.
+
+
+# An atom is a constant whose value is its own name. Some other languages call these symbols. They are often useful to enumerate over distinct values, such as:
+
+IO.puts(:apple) # this comes out to be apple itself and this is what we call atoms
+# atoms are equal if there names are equal like: :apple == :apple comes to be true
