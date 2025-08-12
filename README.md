@@ -1,2 +1,4 @@
 # Elixir
-A personal journey into learning Elixir covering basics, functional programming concepts, and small hands-on projects. Scale to billions, real-time and what not.
+
+This repository documents my progress in learning **Elixir**, a functional, concurrent, and fault-tolerant programming language built on the Erlang VM (BEAM).  
+It contains notes, examples, and small projects I build along the way.
