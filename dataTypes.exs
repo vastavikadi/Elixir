@@ -71,3 +71,10 @@ IO.puts(false or is_boolean(true)) # true and NOTE: idhr phla argument true ya f
 
 IO.puts(:apple) # this comes out to be apple itself and this is what we call atoms
 # atoms are equal if there names are equal like: :apple == :apple comes to be true
+
+# atoms are used to define the state of an operator such as :ok and :error
+#Elixir allows you to skip the leading : for the atoms false, true and nil.
+# The booleans true and false are also atoms:
+IO.puts(true == :true) # gives out true
+IO.puts(is_atom(false)) # this is true
+IO.puts(is_boolean(:false)) # this is also true
