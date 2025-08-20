@@ -3,7 +3,9 @@
 randomValues = [1, 2, true, 3]
 IO.inspect(randomValues) # instead of puts we use inspect to print lists in elixir
 IO.puts(length([1, 2, 3])) # 3
-
+# IO.puts(randomValues[1]) # this does not work
+IO.puts("The element at index 2 is")
+IO.puts(Enum.at(randomValues,2)) # this checks if the element actaully exists in the list
 
 # list can be concatenated and subtracted using ++ and -- operators
 
