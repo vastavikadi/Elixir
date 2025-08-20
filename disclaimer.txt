@@ -5,3 +5,4 @@ No classes or objects in elixir; instead, we use modules and functions to encaps
 Recursive mutation is not allowed in elixir; instead, we use recursion and higher-order functions to process collections.
 
 '=' is not a assignment operator; it is a match operator. Used for pattern matching.
+the pin operator ^ used to access previously bound values.
