@@ -1,0 +1,3 @@
+No for loops in elixir because of the immutability of data structures. Instead, recursion and higher-order functions like `map`, `reduce`, and `filter` are used to process collections.
+(because in a loop a particular variable is updated, but in elixir, variables are immutable and cannot be changed once set)
+No classes or objects in elixir; instead, we use modules and functions to encapsulate behavior and data.
